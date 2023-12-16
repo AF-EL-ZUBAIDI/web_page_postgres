@@ -128,3 +128,36 @@ postgrest postgrest.conf
 - You should see output similar to 
 ![Alt text](images/result.png)
 
+## Optional Steps: Creating a Login Page
+
+
+
+1. Launch XAMPP and Start Apache Web Server:
+Ensure that the PostgreSQL service is running, then open XAMPP and start the Apache web server.
+
+2. Navigate to the XAMPP Folder:
+Open your terminal and navigate to the XAMPP htdocs directory:
+```bash
+cd /Applications/XAMPP/htdocs
+```
+
+3. Create a Symbolic Link to Your Project Folder:
+Create a symbolic link in the htdocs directory that points to your project folder:
+```bash
+ln -s /path/to/your/folder postgres_project
+```
+
+*If you encounter permission errors, check your file permissions. For macOS users, go to System Preferences > Security & Privacy > Full Disk Access, and add XAMPP to the list.
+
+4. Set Up PHP Files for the Login System:
+In your project folder, create the following PHP files: `dashboard.php`, `dbconnect.php`, `login.php`, and `logout.php`. Add the necessary code to implement the login system.
+
+5. Access the Login Page:
+Open a web browser and navigate to your login page using the following URL:
+`http://localhost/postgres_project/login.php`
+
+You should see a login page similar to this:
+![Alt text](images/login_page.png)
+
+Once logged in, you'll be redirected to a welcome page like this:
+![Alt text](images/welcome.png)
