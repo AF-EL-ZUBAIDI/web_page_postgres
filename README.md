@@ -47,7 +47,7 @@ CREATE DATABASE myproject;
 
 
 
-Step 2: Designing the Database Schema
+Step 3: Designing the Database Schema
 5. Connect to Your Database:
 ```bash
 psql myproject
@@ -62,7 +62,7 @@ CREATE TABLE users (
 );
 ```
 --------
-Step 3: Populate Database with Sample Data
+Step 4: Populate Database with Sample Data
 
 7. Insert Sample Data:
 - Insert data into the `users` table:
@@ -70,7 +70,7 @@ Step 3: Populate Database with Sample Data
 INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com');
 ```
 
-Step 4: Installing and Configuring PostgREST
+Step 5: Installing and Configuring PostgREST
 8. Install PostgREST:
 ```bash
 brew install postgrest
