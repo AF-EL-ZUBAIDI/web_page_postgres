@@ -131,12 +131,12 @@ postgrest postgrest.conf
 ## Optional Steps: Creating a Login Page
 
 1. Run the following SQL command to add a password column:
-```bash
+```sql
 ALTER TABLE users ADD COLUMN password VARCHAR(255);
 ```
 
 2. Add a password for Alice:
-```bash
+```sql
 UPDATE users SET password = 'alicePassword' WHERE name = 'Alice';
 ```
 
